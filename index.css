@@ -1,0 +1,48 @@
+#cover {
+    background-image: url('./images/SeaNight.jpg'); /* Replace with the path to your background image */
+    background-size: cover; /* Ensures the image covers the whole section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 100vh; /* Ensures the section is at least the height of the viewport */
+    background-attachment: fixed; /* Optional: for a parallax effect (background stays while scrolling) */
+}
+.text-darker {
+    color: #333;
+}
+
+*{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; 
+}
+
+/* About me Size Adjust for Mobile and Tablets */
+@media (max-width: 767px) {
+    .photo-border-about {
+        border: 5px solid #ddd; 
+    }
+    #about-title {
+        font-size: 2rem; 
+    }
+    .text-dark {
+        font-size: 0.9rem;   
+    }
+    #project-title {
+        font-size: 2rem; /* Smaller title for mobile */
+    }
+    .card {
+        margin: 1rem; /* Adjust card margin on mobile */
+    }
+    .img-carousel, .img-carousel-modal {
+        height: auto; /* Ensures will images scale properly */
+    }
+    .modal-dialog {
+        margin: 0.5rem; /* Adjust the modal margins on mobile */
+    }
+}
+.photo-border-about {
+    border: 2px solid #ddd; 
+}
+
+.h1-about {
+    font-size: 3rem; 
+}
